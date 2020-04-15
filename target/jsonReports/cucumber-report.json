@@ -1,0 +1,114 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 18,
+        "name": "To Verify Whether Products Page is Displayed And Validate All the Buttons are Displayed.",
+        "description": "",
+        "id": "validate-products-page-validations;to-verify-whether-products-page-is-displayed-and-validate-all-the-buttons-are-displayed.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 16656707200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Login to NopEcommerce With Valid Login Details",
+            "match": {
+              "location": "BasePageStepDefinations.login_to_eCommerce()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2956558000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Navigate to \"Catalog~Products\" from Homepage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Catalog~Products",
+                  "offset": 13
+                }
+              ],
+              "location": "BasePageStepDefinations.menuNavigation(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17249500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify Current Title of the Page is \"Products / nopCommerce administration\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Products / nopCommerce administration",
+                  "offset": 37
+                }
+              ],
+              "location": "BasePageStepDefinations.verifyTitleofAnyPage(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 210846600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Search Value With And Verify Whether it is Displayed in the Grid Or Not",
+            "match": {
+              "location": "productsStepDefination.searchValue(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "$100 Physical Gift Card"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 760867100,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 10,
+                "value": "##Then Click On \"\u003cButton\u003e\" Button from the ProductsPage"
+              }
+            ],
+            "line": 14,
+            "name": "Close Browser",
+            "match": {
+              "location": "BasePageStepDefinations.tearDown()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validate Products Page Validations",
+    "description": "",
+    "id": "validate-products-page-validations",
+    "keyword": "Feature",
+    "uri": "C:/Users/DIGVIJAY/workspace/Nop_ECommerce_Cucumber_FrameWork/Resources/Scenarios/productsPageValidations.Feature"
+  }
+]
